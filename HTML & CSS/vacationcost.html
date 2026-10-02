@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Vacation Cost Calculator</title>
+</head>
+<body>
+    <script>
+        function Vacation(){
+            let day = window.prompt("How many days?")
+
+            if (day<=3){
+                cost = 500
+                alert("Your total cost: $"+cost)
+            }
+            else if (day<=7){
+                cost = 1200
+                alert("Your total cost: $"+cost)
+            }
+            else if (day>7){
+                cost = 2000
+                alert("Your total cost: $"+cost)
+            }
+        }
+        Vacation()
+    </script>
+</body>
+</html>

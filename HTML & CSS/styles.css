@@ -1,0 +1,28 @@
+body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        form{
+            background-color: aliceblue;
+            padding: 20px;
+        }
+        .button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+        }
+        button{
+            padding: 5px;
+            margin: 5px;
+            border-radius: 20px;
+            border: 2px solid gray;
+            transition: 0.2s ease-in-out;
+        }
+        button:hover{
+            padding: 20px;
+            background-color: brown;
+            color: white;
+
+        }

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect JS | Button</title>
+</head>
+<body>
+    <h3>Click the buttons for magic</h3>
+    <div>
+        <button type="submit" value="submit" name="button" onclick="display_msg()">Insert</button>
+
+        <script>
+            function display_msg(){
+                alert("Hi Good Evening!")
+            }
+        </script>
+
+        <button type="submit" name="button" value="submit" onclick="promptBox()">Calculate Cost</button>
+        <h3 id="result">Total Cost: </h3>
+        <script>
+            function promptBox() {
+                let veg = parseInt(window.prompt("Enter the price of the vegetables: "));
+                let drink = parseInt(window.prompt("Enter the price of the drink: "));
+
+                let total = veg + drink;
+
+                document.getElementById("result").innerHTML="Total Cost: $"+total
+            }
+        </script>
+    </div>
+</body>
+</html>

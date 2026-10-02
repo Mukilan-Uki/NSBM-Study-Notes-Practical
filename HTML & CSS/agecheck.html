@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Checking</title>
+</head>
+<body>
+    <h1>Age Check</h1>
+    <script>
+        let age = window.prompt("Your Age?")
+        let rate = window.prompt("Movie Rating?")
+        if (age==18 && rate<18){
+            alert("You are not eligible!")
+        }
+        else if(age==15 && rate<15){
+            alert("You are not eligible")
+        }
+        else{
+            alert("You are eligible!")
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Booking</title>
+</head>
+<body>
+    <script>
+        function Booking(){
+            let vip = confirm("Are you a VIP??")
+
+            if (vip == true){
+                let total = window.prompt("Total ticket price: ")
+                if (total >= 500){
+                    // alert("Offer is applicable!")
+                    document.write("Offer accepted")
+                }
+                else{
+                    // alert("You need to purchas atleast $500!")
+                    document.write("You need to purchas atleast $500!")
+                }
+            }
+            else{
+                // alert("You need to be a VIP!")
+                document.write("You need to be a VIP!")
+            }
+        }
+
+        function Sale(){
+            let shirt = 200
+            let jeans = 300
+
+            let soldShirt = window.prompt("Total T-Shirt Sold: ")
+            let soldJeans = window.prompt("Total Jeans Sold: ")
+
+            let total = shirt*soldShirt + jeans*soldJeans
+
+            document.write("Total bill: $"+total)
+
+            if (total>=10000){
+
+            }
+        }
+
+        
+        function Homework(){
+            let area = window.prompt("Enter the Area of your land: ")
+
+            if (area<=100){
+                alert("Price is $10,000")
+            }
+            else if (area<=200){
+                alert("Price is $15,000")
+            }
+            else if (area>200){
+                alert("Price is $20,000")
+            }
+        }
+
+        Homework()
+    </script>
+</body>
+</html>

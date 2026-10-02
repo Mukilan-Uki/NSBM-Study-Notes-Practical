@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology Trends 2026</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <h1>Technology Trends 2026</h1>
+        <p>Explore some emerging technologies</p>
+        <nav>
+            <a href="index.html" class="nav-btn">Home</a>
+            <a href="technologies.html" class="nav-btn active">Technologies</a>
+            <a href="contact.html" class="nav-btn active">Contact</a>
+        </nav>
+    </header>
+
+    <main class="container narrow-container">
+        
+        <section class="card">
+            <h2>Emerging Technologies</h2>
+            <p>Emerging technologies are new and developing technologies that have the potential to change the way people live, work and communicate.</p>
+            <p>Artificial Intelligence, Robotics, Augmented Reality and 3D Printing are examples of technologies that are becoming increasingly important.</p>
+        </section>
+
+        <section class="card">
+            <h2>Technology Video</h2>
+            <p>Watch the video to learn more about emerging technologies.</p>
+            <div class="video-container">
+                <video controls width="100%">
+                    <source src="./assets/demo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Technology Overview</h2>
+            <table class="tech-table">
+                <thead>
+                    <tr>
+                        <th>Technology</th>
+                        <th>Application</th>
+                        <th>Future Area</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">Artificial Intelligence</td>
+                        <td>Automation</td>
+                        <td>Smart Systems</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Healthcare, Education and Business</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="card">
+            <h2>Share Your Interest</h2>
+            <form class="interest-form">
+                
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name">
+                </div>
+
+                <div class="form-group">
+                    <label for="technology">Favourite Technology:</label>
+                    <select id="technology" name="technology">
+                        <option value="ai">Artificial Intelligence</option>
+                        <option value="robotics">Robotics</option>
+                        <option value="xr">Extended Reality</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="reason">Why are you interested?</label>
+                    <textarea id="reason" name="reason" rows="4" placeholder="Write your answer"></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Submit</button>
+            </form>
+        </section>
+
+    </main>
+
+</body>
+</html>

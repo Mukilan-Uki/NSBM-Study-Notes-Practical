@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+.main-header {
+    background: linear-gradient(135deg, #7b2cbf, #4361ee);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.main-header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.main-header p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.main-header nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.nav-btn {
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 6px 20px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: background 0.3s;
+}
+
+.nav-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.narrow-container {
+    max-width: 800px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 25px;
+}
+
+.card h2 {
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.card p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: #4361ee;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
+
+.btn-submit {
+    display: block;
+    width: 100%;
+    background-color: #4361ee;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-submit:hover, .btn-primary:hover {
+    background-color: #3b55d9;
+}
+
+.hero-card {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-image {
+    flex: 1;
+    transition: 3s;
+    animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+            0% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(10px);
+            }
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+.hero-image img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.features-grid {
+    display: flex;
+    gap: 20px;
+}
+
+.feature-card {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+.feature-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+footer {
+    background-color: #1a2a40;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.85rem;
+    margin-top: 40px;
+}
+
+
+.video-container {
+    background-color: #000;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+}
+
+.tech-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.tech-table th, .tech-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.tech-table th {
+    background-color: #1a365d;
+    color: white;
+    font-weight: normal;
+}
+
+.tech-table td {
+    color: #444;
+}
+
+.interest-form .form-group {
+    margin-bottom: 15px;
+}
+
+.interest-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.85rem;
+    color: #333;
+}
+
+.interest-form input,
+.interest-form select,
+.interest-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 0.9rem;
+}
+
+.interest-form input::placeholder,
+.interest-form textarea::placeholder {
+    color: #aaa;
+}
